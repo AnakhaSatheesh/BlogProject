@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mulish:wght@400;500;700&family=Playfair+Display:wght@800&display=swap');
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'mulish', sans-serif;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav.menu a{
+    border-top: none;
+    font-weight: 700;
+    margin-left: 24px;
+    color: blue;
+}
+.mobile-menu{
+    display: none;
+}
+@media only screen and (max-width:768px){
+    .mobile-menu{
+        display: block;
+        font-size: 24px;
+    }
+    .menu{
+        position: absolute;
+        background-color: #a5cf4b;
+        width: 100%;
+        top: 100%;
+        z-index: 99;
+     /* display: none; */
+    }
+    .menu a{
+        padding: 32px 0;
+        font-size:18px;
+        display: block;
+    }
+}
+
+
+
+h2{
+    font-size: 3em;
+    letter-spacing: 1.5px;
+}
+h3{
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+}
+h4{
+    font-size: 1.6rem;
+}
+h1,h2,h3{
+    font-family: 'playfair Display', serif;
+    font-weight: 800;
+    color: blue;
+    margin: 1.6rem 0;
+}
+span{
+    color: brown;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    margin: 1.6rem 0;
+    font-size: 1.6rem;
+    border-bottom: 2px dotted blue ;
+}
+p{
+    font-weight: 400;
+    margin: 1.6rem 0;
+    font-size: 1.6rem;
+    color: blue;
+    line-height: 1.5%;
+}
