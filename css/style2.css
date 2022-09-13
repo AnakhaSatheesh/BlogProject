@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mulish:wght@400;500;700&family=Playfair+Display:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url(style3.css);
+
 
 *,
 ::before,
@@ -15,6 +13,9 @@ body{
 h2{
     font-size: 3rem;
 }
+h3{
+    font-size: 2.5rem;
+} 
 
  h4{
     font-size: 1.2rem;
@@ -105,6 +106,9 @@ main{
     margin-right: auto; 
 
 } 
+figcaption{
+    text-align: center;
+}
 .blog-content{
     margin-top: 24px;
     text-align: justify;
@@ -114,6 +118,33 @@ main{
     font: italic 800 1.1em "Lora", serif;
     
 } 
+/* -----------Author------------ */
+.author-container{
+    display: flex;
+    align-items:center; 
+    margin-top: 30px; 
+    box-shadow: 0 4px 16px -5px rgba(0, 0, 0, 0.3);  
+    color: rgb(131, 73, 3);
+}
+
+.author-image img{
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    flex: 1;
+}
+.author-info{
+    padding: 0 25px;
+    line-height: 2;
+    flex: 2;
+}
+.author-info h4{
+    margin: 0;
+}
+.author-info p{
+    color: #555;
+    font-size: 15px;
+}
 
 /* --------Related Posts-------- */
 .related{
@@ -147,12 +178,13 @@ main{
 }
 
 .wrapper .thumbnail img{
-    max-width: 60px;
+    width: 60px;
     height:50px;
+    border-radius: 15%;
 
 }
 .wrapper .content{
-    flex: 2;
+    padding: 15px;
 }
 .wrapper .span, a{
     font-size: 1.4rem;
@@ -207,7 +239,7 @@ footer{
     }
 }
 @media only screen and (max-width: 420px){
-   /* *{ background: rgba(213,32,110,0.1)} */
+    /* *{ background: rgba(213,32,110,0.1)}  */
 
 h2{
     font-size: 2em;
@@ -218,9 +250,9 @@ h2{
 }
 main{
     grid-template-columns: 1fr;
-   justify-content: center;
+    justify-content: center;
     display: grid;
-   grid-gap:0;
+    grid-gap:0;
 }
 main > * {margin:auto;}
 
@@ -231,6 +263,17 @@ main > * {margin:auto;}
     grid-area: text;
     width: 100%;
     
+}
+.author-container{
+    flex-direction: column;
+    max-width: 240px;
+    padding: 20px 8px;
+    text-align: center;
+    
+}
+.author-container h4{
+    font-size: 15px;
+
 }
 footer{
     grid-area: ft;

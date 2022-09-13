@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Mulish:wght@400;500;700&family=Playfair+Display:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
 
 *,
 ::before,
@@ -87,7 +86,7 @@ button:hover{
 /* ------hero------ */
 .hero-image{
     position: relative;
-    background: url(images/hero.jpg) no-repeat center;
+    background: url(../images/hero.jpg) no-repeat center;
     background-size: cover;
     height: 500px;
     overflow: hidden;  
@@ -251,16 +250,19 @@ footer{
     .wrapper{
         margin: 20px 0;
     }
-     
+    
 }
 @media only screen and (max-width:420px){
+    /* *{ background: rgba(213,32,110,0.1)}  */
     img{
-        /* width: 250px;
-        height: 250px; */
         display: block;
-         width: 95%;
-         height: auto;
+        width: 95%;
+        height: auto;
 
+    }
+    
+    aside{
+        display: none;
     }
 
 }
